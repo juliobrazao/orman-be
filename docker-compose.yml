@@ -9,4 +9,4 @@ services:
       - .:/src
       - /src/node_modules
     ports:
-      - 33004:3000
+      - 33004:3333
