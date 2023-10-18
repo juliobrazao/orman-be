@@ -1,0 +1,12 @@
+services:
+  orman-be:
+    container_name: orman-be
+    build:
+      context: .
+      network: host
+    command: npm run nodemon
+    volumes:
+      - .:/src
+      - /src/node_modules
+    ports:
+      - 33004:3000
